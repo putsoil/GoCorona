@@ -1,0 +1,90 @@
+.watch-video {
+    background-color: $bg-color;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        height: 136px;
+    }
+
+    &__wrapper {
+        height: 100%;
+        position: relative;
+        
+    }
+
+    &__icon {
+        height: 44px;
+        width: 44px;
+        border: 1px solid #4285F4;
+        border-radius: 50%;
+        cursor: pointer; 
+    }
+
+
+    &__desc {
+        padding: 0 0 0 12px;
+    }
+
+    &__gray-text {
+    }
+
+    &__sm-text {
+    }
+
+    &__red-bg {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: $redColor;
+      border-radius: 0 0px 0px 30px;
+      height: 100%;
+      @include adaptiv-value("width", 295, 147, 0);
+      z-index: 0;
+    }
+}
+
+
+.watch-video__icon > span { 
+    display: block;
+    width: 1px;
+    height: 14px;
+    position: relative;
+    background-color: #4285F4;
+    top: 14px;
+    left: 17px;
+}
+
+
+.watch-video__icon > span::before {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 1px;
+    background: #4285F4;
+    transform: rotate(30deg);
+    position: relative;
+    top: 3px;
+    right: 1px;
+}
+.watch-video__icon > span::after {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 1px;
+    background: #4285F4;
+    transform: rotate(-30deg);
+    position: relative;
+    top: 9px;
+    left: -1px;
+}
+
+
+.watch-video__wrapper {
+    @media (max-width: $md3) {
+        max-height: 120px;
+        display: flex;
+        justify-content: center;
+      }
+}
+

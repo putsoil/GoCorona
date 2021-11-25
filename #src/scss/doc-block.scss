@@ -1,0 +1,25 @@
+.doc-block {
+    max-height: 460px;
+}
+
+
+
+.doc-block__container {
+    position: relative;
+}
+
+.doc-block__box {
+    position: relative;
+    z-index: 8;
+}
+
+.doc-block__red-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: $redColor;
+    height: 460px;
+    @include adaptiv-value("width", 295, 147, 0);
+    z-index: 0;
+    
+}

@@ -1,0 +1,62 @@
+@import '_reset';
+@import '_vars';
+@import 'mixin';
+@import 'fonts';
+@import 'header';
+@import 'main-content';
+@import 'doc-block';
+@import 'video';
+@import 'mobile-block';
+@import 'count-block';
+@import 'experts-block';
+
+
+
+
+body {
+    height: 100%;
+  }
+  
+._container {
+    max-width: $maxWidth + px;
+    @include adaptiv-value("padding-left", 35, 10, 0);
+    @include adaptiv-value("padding-right", 35, 10, 0);
+    margin: 0 auto;
+    position: initial;
+    z-index: 8;
+} 
+
+.main {
+    position: relative;
+    top: 113px;
+    @media (max-width: $md4) {
+        top: 70px;
+      } 
+}
+
+
+
+.btn {
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 10px;
+    cursor: pointer;
+    a {
+        color: #FCFDFE;
+    }
+    
+}
+.btn-blue {
+    width: 130px;
+    background:#4285F4;
+}
+  
+.red-btn {
+    width: 144px;
+    background: $redColor;
+    color: #FCFDFE;
+}

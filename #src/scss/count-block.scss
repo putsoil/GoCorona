@@ -1,0 +1,33 @@
+.count-block {
+
+    &__wrapper {
+        background-color: $bg-color;
+    }
+
+    &__container {
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__items {
+        width: 654px;
+        height: 117px;
+        box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+        border-radius: 16px;
+        background: $whiteColor;
+    }
+
+    &__item {
+    }
+
+    &__pic-one {
+    }
+
+    &__pic-two {
+    }
+
+    &__pic-three {
+    }
+}
