@@ -1,11 +1,18 @@
 .doc-block {
-    max-height: 460px;
 }
 
-
+.doc-block__wrapper {
+    height: max-content;
+    position: relative;
+}
 
 .doc-block__container {
     position: relative;
+    max-width: 1012px;
+}
+
+.doc-block__page {
+    padding: 40px 0 0 0;
 }
 
 .doc-block__box {
@@ -13,13 +20,16 @@
     z-index: 8;
 }
 
-.doc-block__red-bg {
+.doc-block__wrapper::before {
+    content: "";
+    width: 24.608rem;
+    height: 100%;
+    background-color: $redColor;
     position: absolute;
     right: 0;
-    top: 0;
-    background: $redColor;
-    height: 460px;
-    @include adaptiv-value("width", 295, 147, 0);
-    z-index: 0;
-    
-}
+
+    @media (max-width: $md3) {
+        display: none;
+      } 
+  }
+ 

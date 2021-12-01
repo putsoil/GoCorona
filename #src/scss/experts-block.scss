@@ -1,0 +1,21 @@
+.experts-block {
+
+    &__main {
+        padding: 96px 0 116px 0;
+    }
+
+    &__box {
+        padding: 0 74px 0 0px;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        background: $whiteColor;
+        box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+        border-radius: 8px;
+        }
+}
+
+
+

@@ -17,6 +17,13 @@ h1 {
       }
     
 }
+h2 {
+    font-weight: bold;
+    font-size: calc(26px + (36 - 26) * ((100vw - 320px) / (1096 - 320)));
+    line-height: 43 / 36 * 100%;
+    color: $redColor;
+    letter-spacing: 0.14em;
+}
 
 .main-text {
     color: $grayColor;
@@ -48,4 +55,11 @@ a {
         color: $blackColor;
         font-feature-settings: 'pnum' on, 'lnum' on;
     }
+}
+
+.bottom-block__text {
+    font-size: 16px;
+    line-height: 22.16 / 16 * 100%;
+    letter-spacing: 0.08em;
+    font-weight: 700;
 }

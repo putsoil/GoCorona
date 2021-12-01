@@ -31,17 +31,6 @@
 
     &__sm-text {
     }
-
-    &__red-bg {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      background: $redColor;
-      border-radius: 0 0px 0px 30px;
-      height: 100%;
-      @include adaptiv-value("width", 295, 147, 0);
-      z-index: 0;
-    }
 }
 
 
@@ -88,3 +77,16 @@
       }
 }
 
+
+.watch-video__wrapper::before {
+    content: "";
+    width: 24.608rem;
+    height: 100%;
+    background-color: $redColor;
+    position: absolute;
+    right: 0;
+    border-radius: 0 0 0 30px;
+    @media (max-width: $md3) {
+        display: none;
+      } 
+  }

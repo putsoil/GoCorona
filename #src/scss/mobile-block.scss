@@ -7,20 +7,16 @@
     }
 
     &__wrapper {
-        padding: 79px 0 0 0;
+    }
+
+    &__page {
+        padding: 79px 0;
         position: relative;
     }
 
     &__image {
-        padding: 29px 73px 0 0;
+        padding-left: 30px;
     }
-
-    &__image > img {
-        padding-right: 0;
-    }
-
-
-
     &__box {
     }
 
@@ -37,43 +33,9 @@
 
 
 .mobile-block {
-
-    &__pic-one {
-        position: absolute;
-        width: 147px;
-        height: 147px; 
-        border-radius: 30px;
-        background: $redColor;
-        top: 79px; 
-        left: 31px;
-    }
-
-    &__pic-two,
-    &__pic-three {
-        position: absolute;
-        width: 77px;
-        height: 77px;
-        background: $redColor;
-        border-radius: 30px;
-    }
-    &__pic-two {
-        top: 70%;
-        left: 27%;
-    }
-
-    &__pic-three {
-        top: 87%;
-        left: 67px;
-
-    }
 }
 
 @media (max-width: $md3) {
-    .mobile-block__pic-one,
-    .mobile-block__pic-two,
-    .mobile-block__pic-three {
-        display: none;
-    }
     .mobile-block__image {
         padding: 0;
     }
