@@ -6,6 +6,9 @@
 
     &__box {
         padding: 0 74px 0 0px;
+        @media (max-width: $md3) {
+            padding: 0px;
+          } 
     }
 
     &__image {
