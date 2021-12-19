@@ -36,6 +36,12 @@
 }
 
 @media (max-width: $md3) {
+    .mobile-block__box {
+        padding: 20px 0 0;
+    }
+}
+
+@media (max-width: $md2) {
     .mobile-block__image {
         padding: 0;
     }

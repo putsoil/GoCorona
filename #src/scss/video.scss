@@ -32,7 +32,13 @@
     &__sm-text {
     }
 }
-
+.watch-video__icon:hover {
+    color: #2f6cce;
+    box-shadow: 0 0 10px rgba(47, 108, 206,0.5)
+}
+.watch-video__sm-text:hover {
+    color: #2f6cce;
+}
 
 .watch-video__icon > span { 
     display: block;

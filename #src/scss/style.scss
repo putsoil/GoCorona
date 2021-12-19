@@ -56,9 +56,19 @@ body {
     width: 130px;
     background:#4285F4;
 }
+
+.btn-blue:hover {
+    background:#2f6cce; 
+    box-shadow: 0 0 10px rgba(47, 108, 206,0.5)
+}
   
 .red-btn {
     width: 144px;
     background: $redColor;
     color: #FCFDFE;
+}
+
+.red-btn:hover {
+    background: #db3944;
+    box-shadow: 0 0 10px rgba(219, 57, 68,0.5)
 }
